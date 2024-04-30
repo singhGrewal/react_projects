@@ -23,13 +23,16 @@ const components = [
         label: "Tree View",
         pathTo: "/tree_view",
         description: ''
+    }, {
+        label: "Qr code Generator",
+        pathTo: "/qr_code_generator",
+        description: ''
     }]
 
 export default function Home() {
     let navigate = useNavigate()
 
     function handleComponent(path) {
-        console.log("click", path)
         navigate(path);
     }
 

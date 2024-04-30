@@ -6,6 +6,7 @@ import ImageSlider from "./components/imageSlider";
 import TreeView from "./components/treeView";
 import {Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
+import QrCodeGenerator from "./components/qr-code-generator";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path="/image_slider"
                    element={<ImageSlider url={'https://picsum.photos/v2/list'} page={1} limit={5}/>}/>
             <Route exact path="/tree_view" element={<TreeView/>}/>
+            <Route exact path="/qr_code_generator" element={<QrCodeGenerator/>}/>
         </Routes>
     );
 }
