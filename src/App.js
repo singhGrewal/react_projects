@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Accordion from "./components/accordion";
+import RandomColors from "./components/randomColors";
+import StarRating from "./components/starRating";
+import ImageSlider from "./components/imageSlider";
+import TreeView from "./components/treeView";
+ import menus from './components/treeView/data'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/*<Accordion/>*/}
+     {/*   <RandomColors/>*/}
+     {/*   <StarRating/>*/}
+     {/*   <ImageSlider url={'https://picsum.photos/v2/list'} page ={1}limit={5} />*/}
+        <TreeView menus={menus}/>
     </div>
   );
 }
