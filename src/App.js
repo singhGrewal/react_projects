@@ -4,11 +4,12 @@ import RandomColors from "./components/randomColors";
 import StarRating from "./components/starRating";
 import ImageSlider from "./components/imageSlider";
 import TreeView from "./components/treeView";
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
 import QrCodeGenerator from "./components/qr-code-generator";
 import UseRefHookForm from "./components/form_useRefHook/useRefHookForm";
 import FormForwardRefHook from "./components/form_forwardRefHook";
+import LightDarkMode from "./components/lightDarkMode";
 
 function App() {
     return (
@@ -23,6 +24,8 @@ function App() {
             <Route exact path="/qr_code_generator" element={<QrCodeGenerator/>}/>
             <Route exact path="/useRefHookForm" element={<UseRefHookForm/>}/>
             <Route exact path="/formForwardRefHook" element={<FormForwardRefHook/>}/>
+            <Route exact path="/lightDarkMode" element={<LightDarkMode/>}/>
+            <Route path="*" element={<Navigate replace to="/"/>}/>
         </Routes>
     );
 }

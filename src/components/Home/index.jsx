@@ -31,10 +31,14 @@ const components = [
         label: "useRef Hook Form",
         pathTo: "/useRefHookForm",
         description: 'Avoid unnecessary renders'
-    },{
+    }, {
         label: "Form ForwardRef Hook Form",
         pathTo: "/formForwardRefHook",
         description: 'Forward Ref'
+    }, {
+        label: "LightDarkMode",
+        pathTo: "/lightDarkMode",
+        description: 'Custom Hook for theme using localstorage'
     }]
 
 export default function Home() {
