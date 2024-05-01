@@ -36,9 +36,13 @@ const components = [
         pathTo: "/formForwardRefHook",
         description: 'Forward Ref'
     }, {
-        label: "LightDarkMode",
+        label: "LightDark Mode",
         pathTo: "/lightDarkMode",
         description: 'Custom Hook for theme using localstorage'
+    },{
+        label: "Scroll Indicator",
+        pathTo: "/scrollIndicator",
+        description: 'Scroll Indicator progress bar'
     }]
 
 export default function Home() {
