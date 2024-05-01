@@ -1,0 +1,34 @@
+h1{
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.container form {
+    display: flex;
+    flex-direction: column; /* Align form elements vertically */
+    align-items: center; /* Center form elements horizontally */
+}
+
+.container form div {
+    margin-bottom: 10px; /* Add spacing between form elements */
+    display: flex; /* Align items in the div */
+    align-items: center; /* Center items vertically */
+}
+
+.container form label {
+    margin-right: 10px; /* Add spacing between labels and inputs */
+}
+
+.container form input {
+    padding: 5px; /* Add padding to inputs */
+    width: 200px; /* Set width of inputs */
+}
+
+.container form button {
+    padding: 5px 10px; /* Add padding to button */
+}

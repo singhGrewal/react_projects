@@ -7,6 +7,8 @@ import TreeView from "./components/treeView";
 import {Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
 import QrCodeGenerator from "./components/qr-code-generator";
+import UseRefHookForm from "./components/form_useRefHook/useRefHookForm";
+import FormForwardRefHook from "./components/form_forwardRefHook";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                    element={<ImageSlider url={'https://picsum.photos/v2/list'} page={1} limit={5}/>}/>
             <Route exact path="/tree_view" element={<TreeView/>}/>
             <Route exact path="/qr_code_generator" element={<QrCodeGenerator/>}/>
+            <Route exact path="/useRefHookForm" element={<UseRefHookForm/>}/>
+            <Route exact path="/formForwardRefHook" element={<FormForwardRefHook/>}/>
         </Routes>
     );
 }

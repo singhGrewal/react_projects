@@ -10,7 +10,12 @@ export default function QrCodeGenerator() {
         setValue('')
     }
 
-    return <div>
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'center',
+    }}>
         <h1>QR Code Generator</h1>
         <div className="qrcode__input">
             <input
@@ -25,7 +30,7 @@ export default function QrCodeGenerator() {
                 Code
             </button>
         </div>
-        <div style={{height: "auto", margin: "0 auto", maxWidth: 64, width: "100%"}}>
+        <div style={{height: "auto", margin: "0 auto" , width: "100%",  marginTop:"20px"}}>
             <QRCode id="qr-code-value" value={qrCode} size={400} bgColor="#fff"/>
         </div>
     </div>
