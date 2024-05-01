@@ -1,5 +1,6 @@
 import './styles.css'
 import {useNavigate} from 'react-router-dom';
+import CustomTabs from "../customTabs";
 
 const components = [
     {
@@ -43,6 +44,10 @@ const components = [
         label: "Scroll Indicator",
         pathTo: "/scrollIndicator",
         description: 'Scroll Indicator progress bar'
+    },{
+        label: "Custom Tabs",
+        pathTo: "/customTabs",
+        description: 'Custom Tabs'
     }]
 
 export default function Home() {

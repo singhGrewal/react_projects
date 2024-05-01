@@ -11,6 +11,7 @@ import UseRefHookForm from "./components/formUseRefHook/useRefHookForm";
 import FormForwardRefHook from "./components/formForwardRefHook";
 import LightDarkMode from "./components/lightDarkMode";
 import ScrollIndicator from "./components/scrollIndicator";
+import CustomTabs from "./components/customTabs";
 
 function App() {
     return (
@@ -26,7 +27,9 @@ function App() {
             <Route exact path="/useRefHookForm" element={<UseRefHookForm/>}/>
             <Route exact path="/formForwardRefHook" element={<FormForwardRefHook/>}/>
             <Route exact path="/lightDarkMode" element={<LightDarkMode/>}/>
-            <Route exact path="/scrollIndicator" element={<ScrollIndicator  url={"https://dummyjson.com/products?limit=100"}/>}/>
+            <Route exact path="/scrollIndicator"
+                   element={<ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>}/>
+            <Route exact path="/customTabs" element={<CustomTabs/>}/>
             <Route path="*" element={<Navigate replace to="/"/>}/>
         </Routes>
     );
