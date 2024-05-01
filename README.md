@@ -1,3 +1,8 @@
+## All components are accessible via the following live link:
+[Herokuapp Project](https://react-projec-master-swk8lr8y5u.herokuapp.com/).
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
