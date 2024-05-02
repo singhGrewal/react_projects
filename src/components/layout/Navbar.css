@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    height: 40px;
+    width: 100%;
+    right: 0
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__home {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.navbar__right {
+    display: flex;
+}
+
+.navbar__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__item {
+    margin-left: 10px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    margin-left: 10px
+}

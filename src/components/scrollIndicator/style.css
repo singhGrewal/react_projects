@@ -1,6 +1,6 @@
 .top-container{
     position: fixed;
-    top: 0;
+    top: 60px;
     z-index: 1;
     width: 100%;
     text-align: center;
