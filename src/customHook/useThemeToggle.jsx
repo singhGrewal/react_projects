@@ -5,7 +5,7 @@ export default function UseThemeToggle() {
     const [theme, setTheme] = useState(() => {
         const savedThemeInLocalStorage = localStorage.getItem('theme')
         if (savedThemeInLocalStorage) {
-            return savedThemeInLocalStorage
+            return savedThemeInLocalStorage || 'light'
         } else {
             return theme
         }
