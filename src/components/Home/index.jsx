@@ -48,6 +48,10 @@ const components = [
         label: "Custom Tabs",
         pathTo: "/customTabs",
         description: 'Custom Tabs'
+    },{
+        label: "Github Profile Finder",
+        pathTo: "/githubProfileFinder",
+        description: 'Github Profile Finder'
     }]
 
 export default function Home() {

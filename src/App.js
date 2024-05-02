@@ -13,6 +13,7 @@ import LightDarkMode from "./components/lightDarkMode";
 import ScrollIndicator from "./components/scrollIndicator";
 import CustomTabs from "./components/customTabs";
 import Layout from "./components/layout/Layout";
+import GithubProfileFinder from "./components/githubProfileFinder";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route exact path="/scrollIndicator"
                        element={<ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>}/>
                 <Route exact path="/customTabs" element={<CustomTabs/>}/>
+                <Route exact path="/githubProfileFinder" element={<GithubProfileFinder/>}/>
                 <Route path="*" element={<Navigate replace to="/"/>}/>
             </Routes>
         </Layout>
