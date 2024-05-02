@@ -1,6 +1,5 @@
 import './styles.css'
 import {useNavigate} from 'react-router-dom';
-import CustomTabs from "../customTabs";
 
 const components = [
     {
@@ -40,18 +39,22 @@ const components = [
         label: "LightDark Mode",
         pathTo: "/lightDarkMode",
         description: 'Custom Hook for theme using localstorage'
-    },{
+    }, {
         label: "Scroll Indicator",
         pathTo: "/scrollIndicator",
         description: 'Scroll Indicator progress bar'
-    },{
+    }, {
         label: "Custom Tabs",
         pathTo: "/customTabs",
         description: 'Custom Tabs'
-    },{
+    }, {
         label: "Github Profile Finder",
         pathTo: "/githubProfileFinder",
         description: 'Github Profile Finder'
+    }, {
+        label: "Tick Tac Toe",
+        pathTo: "/tickTacToe",
+        description: 'Tick Tac Toe game'
     }]
 
 export default function Home() {
