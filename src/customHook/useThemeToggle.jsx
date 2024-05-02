@@ -4,10 +4,10 @@ import './styles.css'
 export default function UseThemeToggle() {
     const [theme, setTheme] = useState(() => {
         const savedThemeInLocalStorage = localStorage.getItem('theme')
-        if (savedThemeInLocalStorage) {
-            return savedThemeInLocalStorage || 'light'
+        if (savedThemeInLocalStorage && (savedThemeInLocalStorage === 'dark' || 'light')) {
+            return savedThemeInLocalStorage
         } else {
-            return theme
+            return theme || 'light'
         }
     });
 
