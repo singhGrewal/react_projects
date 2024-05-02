@@ -5,7 +5,7 @@ export default function LightDarkMode() {
 
     return <div className={'light-dark-mode'} data-theme={theme || 'light'}>
         <div className='container'>
-            <p>Theme is set to : {theme}</p>
+            <p>Theme is set to : {theme || 'light'}</p>
             <button onClick={toggleTheme}>Change Theme</button>
         </div>
     </div>
